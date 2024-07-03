@@ -1,0 +1,12 @@
+.card {
+  width: 100%; 
+  max-width: 600px; 
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  padding: 20px; 
+  background-color: #fff; 
+  margin: 0 auto; 
+  text-align: center; 
+}

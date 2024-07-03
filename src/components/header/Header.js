@@ -39,6 +39,11 @@ const Header = () => {
                 Home
                 </Link>
                </li>
+               <li>
+                <Link to="/contact">
+                Contact Us
+                </Link>
+               </li>
             </ul>
             <div className={styles["header-right"]}>
             <span className={styles.links}>
