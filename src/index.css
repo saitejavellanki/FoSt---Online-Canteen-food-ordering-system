@@ -16,7 +16,7 @@
 
   --color-primary: #007bff;
   --color-success: #28a745;
-  --color-danger: orangered;
+  --color-danger: linear-gradient(to bottom right, red, yellow);
 }
 
 * {
@@ -183,7 +183,7 @@ p {
   color: #007bff;
 }
 .--color-danger {
-  color: orangered;
+  color: linear-gradient(to bottom right, red, yellow);
 }
 .--color-success {
   color: #28a745;
@@ -308,7 +308,7 @@ p {
 }
 .--btn-danger {
   color: #fff;
-  background: orangered;
+  background: linear-gradient(to bottom right, red, yellow);
 }
 
 .--btn-success {
