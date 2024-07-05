@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Header.module.scss"
 import {FaShoppingCart} from "react-icons/fa"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const logo = (
@@ -25,7 +25,8 @@ const cart = (
                   </Link>
                   </span>
       )
-                  
+           
+const activeLink = ({ isActive}) => (isActive ? `${styles.active}` : "")
 
 const Header = () => {
   return (
@@ -47,7 +48,7 @@ const Header = () => {
             </ul>
             <div className={styles["header-right"]}>
             <span className={styles.links}>
-                <Link>Login</Link>
+            <NavLink to="/login" className={activeLink}>Login</NavLink>
                 <Link>Register</Link>
                 <Link>Order-history</Link>
 
