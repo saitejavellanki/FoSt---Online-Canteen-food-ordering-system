@@ -6,32 +6,33 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {auth} from "../../firebase/config"
 import Loader from '../../components/loader/Loader'
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Register = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [cPassword, setCPassword] = useState("")
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
 
     const navigate = useNavigate()
 
     const registerUser = (e) => {
         e.preventDefault();
-//         if(password !== cPassword){
-//             toast.error("Passwords do not match");
-//         }
-//         setIsLoading(true)
-//         createUserWithEmailAndPassword(auth, email, password)
-//       .then((userCredential) => {
-//           const user = userCredential.user;
-//           setIsLoading(false)
-//           toast.success("Registration Successful...")
-//           navigate("/login")
-//   })
-//       .catch((error) => {
-//           toast.error(error.message)
-//           setIsLoading(false)
-//   });
+        if(password !== cPassword){
+            toast.error("Passwords do not match");
+        }
+        setIsLoading(true)
+        createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+          const user = userCredential.user;
+          setIsLoading(false)
+          toast.success("Registration Successful...")
+          navigate("/login")
+  })
+      .catch((error) => {
+          toast.error(error.message)
+          setIsLoading(false)
+  });
 }
   return (
     <>
