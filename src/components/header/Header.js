@@ -49,7 +49,7 @@ const Header = () => {
             <div className={styles["header-right"]}>
             <span className={styles.links}>
             <NavLink to="/login" className={activeLink}>Login</NavLink>
-                <Link>Register</Link>
+                <NavLink to="/register" className={activeLink}>Register</NavLink>
                 <Link>Order-history</Link>
 
             </span>
