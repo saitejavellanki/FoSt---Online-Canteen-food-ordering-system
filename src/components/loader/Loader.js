@@ -1,5 +1,5 @@
 import React from 'react'
-import loaderImg from "../../assets/loader.gif"
+import loaderImg from "../../Assets/loader.gif"
 import styles from "./Loader.module.scss"
 import ReactDOM from 'react-dom'
 

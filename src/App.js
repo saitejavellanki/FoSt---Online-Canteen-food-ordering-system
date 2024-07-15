@@ -1,16 +1,19 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import styles from "./App.scss";
-import Header from "./components/header/Header";
-
+import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer";
 import {Home, Contact, Login} from "./pages"
 import Register from "./pages/auth/Register";
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
   return (
     //App
     <>
+   
     <BrowserRouter>
+    <ToastContainer/>
     <Header/>
     <Routes>
       <Route path="/" element ={<Home/>} />
@@ -21,6 +24,7 @@ function App() {
     </Routes>
     <Footer/>
     </BrowserRouter>
+   
     </>
   );
 }
