@@ -1,0 +1,73 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px;
+    color: white;
+}
+
+.nav-logo{
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: Poppins;
+    font-size: 18px;
+    gap: 15px;
+}
+
+.nav-cart{
+    border-radius: 50px;
+    padding: 5px 20px;
+    background: white;
+    color: #262626;
+}
+
+.active{
+    position: relative;
+    color: white;
+}
+
+.nav-menu:hover{
+    color: orangered;
+}
+
+.home{
+    color: white;
+}
+.contact{
+    color: white;
+}
+.register{
+    color: white;
+}
+.login{
+    color: white;
+}
+
+.home:hover{
+    transform: scale(1.2);
+    color: orangered;
+}
+.login:hover{
+    transform: scale(1.2);
+    color: orangered;
+}
+.contact:hover{
+    transform: scale(1.2);
+    color: orangered;
+}
+.register:hover{
+    transform: scale(1.2);
+    color: orangered;
+}
+
+.home:active{
+    transform: scale(1.2);
+    color: orangered;
+}
