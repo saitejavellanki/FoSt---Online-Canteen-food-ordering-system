@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Background from '../background/Background'
-import Navbar from '../navbar/Navbar'
+
 import Hero from '../hero/Hero'
 
 

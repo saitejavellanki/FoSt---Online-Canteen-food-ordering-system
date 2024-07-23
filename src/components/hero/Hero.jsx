@@ -4,6 +4,7 @@ import arrow_btn from '../../Assets/arrow_btn.png'
 import play_icon from '../../Assets/play_icon.png'
 import pause_icon from '../../Assets/pause_icon.png'
 import heroData from '../homehandler/Homehandler'
+import { Link,NavLink } from 'react-router-dom'
 const Hero = ({heroData, heroCount, setHeroCount, setPlayStatus, playStatus}) => {
   return (
     <div className='hero'>
@@ -11,9 +12,12 @@ const Hero = ({heroData, heroCount, setHeroCount, setPlayStatus, playStatus}) =>
            <p>{heroData.text1}</p>
            <p>{heroData.text2}</p>
         </div>
-        <div className='hero-explore'>
+        <div >
+          
+           <NavLink to="/home" className='hero-explore'>
            <p>explore</p>
            <img src={arrow_btn} alt=''/>
+           </NavLink>
         </div>
         <div className='hero-dot-play'>
             <ul className='hero-dots'>
