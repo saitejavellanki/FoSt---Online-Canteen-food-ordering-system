@@ -8,6 +8,9 @@ import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 
 import { auth } from '../../firebase/config'
 import { toast } from 'react-toastify'
 import Loader from '../../components/loader/Loader'
+import React from 'react'
+import { Button } from '../../components/ui/button'
+
 
 
 const Login = () => {
@@ -73,7 +76,7 @@ const Login = () => {
         </div>
         <p>-- or --</p>
       </form>
-      <button className="--btn --btn-danger --btn-block" /*onClick={signInWithGoogle} */><FaGoogle color="#fff"/> Login With Google</button>
+      <Button variant = "outline"> Login With Google</Button>
       <span className={styles.register}>
         <p>Don't have an account ?</p>
         <Link to="/register">Register</Link>

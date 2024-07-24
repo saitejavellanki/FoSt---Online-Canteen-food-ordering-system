@@ -22,8 +22,13 @@
     border-radius: 60px;
     background-color: white;
     cursor: pointer;
+    
 
 
+}
+
+.hero-explore:hover{
+    transform: scale(1.2);
 }
 
 .hero-explore p{

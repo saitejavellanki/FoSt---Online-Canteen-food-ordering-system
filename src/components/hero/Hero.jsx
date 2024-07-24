@@ -16,7 +16,7 @@ const Hero = ({heroData, heroCount, setHeroCount, setPlayStatus, playStatus}) =>
           
            <NavLink to="/home" className='hero-explore'>
            <p>explore</p>
-           <img src={arrow_btn} alt=''/>
+           <img src={arrow_btn} alt='' className='logoarrow'/>
            </NavLink>
         </div>
         <div className='hero-dot-play'>
