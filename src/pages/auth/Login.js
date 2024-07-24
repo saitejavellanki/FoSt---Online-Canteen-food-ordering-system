@@ -76,7 +76,7 @@ const Login = () => {
         </div>
         <p>-- or --</p>
       </form>
-      <Button variant = "outline"> Login With Google</Button>
+      <Button variant="outline" size="lg" className="round-full" asChild> Login With Google</Button>
       <span className={styles.register}>
         <p>Don't have an account ?</p>
         <Link to="/register">Register</Link>
