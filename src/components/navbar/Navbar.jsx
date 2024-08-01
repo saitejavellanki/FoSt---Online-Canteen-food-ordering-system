@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-
+import {Box} from '@chakra-ui/react'
 
 const Navbar = () => {
   
   return (
+    <Box>
     <div className='nav'>
       <div className='nav-logo'>FoSt.</div>
       <ul className='nav-menu'>
@@ -16,6 +17,7 @@ const Navbar = () => {
          <li className='nav-cart'>Cart</li>
       </ul>
     </div>
+    </Box>
   )
 }
 
